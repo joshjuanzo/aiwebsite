@@ -1,0 +1,61 @@
+h1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Georgia, serif;
+
+}
+
+img {
+    background-image: url('Artificial intelligence to Enhance Language Skills Presentation in Blue and Purple 3D Modern Style (2).gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1100px; 
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+    height: auto;
+    float: right;
+}
+.container
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: gray;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Verdana, sans-serif;
+}
+
+ul {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size:
+}
+
+li {
+  margin-bottom: 10px;
+  text-align: left
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
