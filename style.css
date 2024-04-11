@@ -1,22 +1,8 @@
 h1 {
   margin-left: 20px;
   margin-right: 20px;
-  font-family: Georgia, serif;
-
+  font-family: Georgia, serif;property value expected
 }
-
-img {
-    background-image: url('Artificial intelligence to Enhance Language Skills Presentation in Blue and Purple 3D Modern Style (2).gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 1100px; 
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 0;
-    height: auto;
-    float: right;
-}
-.container
 
 body {
   font-family: Arial, sans-serif;
@@ -42,7 +28,7 @@ ul {
   margin-right: 10px;
   margin-left: 20px;
   margin-bottom: 10px;
-  font-size:
+  font-size:14;
 }
 
 li {
@@ -57,5 +43,43 @@ a {
 
 a:hover {
     text-decoration: underline;
+
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+.image-container img {
+  width: 100%; 
+  margin-right: 30px;
+  margin-left: 20px;
+  padding: 0;
+  height: auto;
+  display: block;
+}
+.text-overlay {
+  position: absolute;
+  background-color: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
 }
 
+.text-overlay.item1 {
+  top: 370px;
+  left: 70px;
+}
+.text-overlay.item2 {
+  top: 410px;
+  left: 70px;
+}
+.text-overlay.item3 {
+  top: 450px;
+  left: 70px;
+}
+.text-overlay.item4 {
+  top: 490px;
+  left: 70px;
+}
