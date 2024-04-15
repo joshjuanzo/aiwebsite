@@ -51,8 +51,8 @@ a:hover {
   margin: 20px;
 }
 .image-container img {
-  width: 100%; 
-  margin-right: 30px;
+  width: 109%; 
+  margin-right: 20px;
   margin-left: 20px;
   padding: 0;
   height: auto;
@@ -68,18 +68,47 @@ a:hover {
 }
 
 .text-overlay.item1 {
-  top: 370px;
+  top: 420px;
   left: 90px;
 }
 .text-overlay.item2 {
-  top: 410px;
-  left: 90px;
-}
-.text-overlay.item3 {
   top: 450px;
   left: 90px;
 }
-.text-overlay.item4 {
-  top: 490px;
+.text-overlay.item3 {
+  top: 480px;
   left: 90px;
 }
+.text-overlay.item4 {
+  top: 510px;
+  left: 90px;
+  color: white;
+}
+.text-overlay.item4 a:hover {
+  color: red; 
+}
+.text-overlay.item5 {
+  top: 370px;
+  left: 90px;
+  font-size:18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.signup-link {
+  color: black; 
+  text-decoration: none; 
+  font-family: Arial, sans-serif; 
+
+  font-weight: bold; 
+}
+
+.separator {
+  margin: 0 5px; 
+   color: gray; 
+}
+
