@@ -31,11 +31,11 @@ input {
   margin-bottom: .5em;
 }
 
-#submit, #reset {
+#submitForm, #reset {
   width: 7em;
   background-color: silver;
   margin-top: 10px; 
-  margin-left: auto; 
+  margin-left: auto;
   text-align: center;
 }
 
