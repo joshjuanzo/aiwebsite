@@ -3,11 +3,13 @@
 <head>
    <title>EmpowerED Sign-Up</title>
    <link rel="stylesheet" href="formstyle.css">
+   <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
   <h1>AI for Educators</h1>
   <h2>Sign-up here!</h2>
-    <form>
+  <form>
     <fieldset>
       <label for="name">Name:</label>
       <input type="text" name="name" id="name" required><br><br>
@@ -30,10 +32,10 @@
          placeholder="999-999-9999" 
          pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
          title="Must be 999-999-999 format"><br><br>
-      <input type="submit" name="submit" value="Submit">
+      <button type="button" id="submit" onclick="submitForm()"> Submit</button><br><br>
       <input type="reset" name="reset" id="reset">
    </fieldset>
-    </form>
+  </form>
   <script src="script.js"></script>
 </body>
 </html>
