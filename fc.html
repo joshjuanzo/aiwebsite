@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Tools for Educators</title>
+    <link rel="stylesheet" href="fc.css">
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+</head>
+<body onload="onPageLoad()">
+    <div class="header">
+        <div class="brand">
+            <h1>EmpowerED</h1>
+            <div class="about-contact">
+                <a href="index.html">Home</a>
+                <a href="about.html" onclick="openAbout()">About</a>
+            </div>
+        </div>
+        <div class="search-subscribe">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" name="q" id="google-search-bar" placeholder="Search Google...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="separator"></div>
+            <a href="form.html" class="signup-link">Subscribe</a>
+        </div>
+    </div>
+    <header>
+      <p onmouseover="onParagraphMouseOver()" onmouseout="onParagraphMouseOut()">
+        Explore our curated Featured Content—a treasure trove of resources designed to enrich teaching and learning. From interactive quizzes to insightful articles, each item is meticulously chosen to inspire educators and engage students. Join us on this educational journey as we empower you to unlock new possibilities in the classroom.
+      </p>
+    </header><br><br>
+  <main>
+      <div class="video-container">
+          <div class="video-wrapper">
+              <div class="video-cell">
+                  <div class="video-content">
+                      <iframe class="video-iframe" src="https://www.youtube.com/embed/TOxsp5clO-U" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="caption-cell">
+                  <h2>Create fast. Differentiate with ease.</h2>
+                  <p>Generate Quizzes and Lessons in seconds. Adapt your content quickly to support every student and learning style. Get instant data to identify skill gaps and give personalized practice recommendations. Try it out now.</p>
+              </div>
+          </div>
+          <div class="video-wrapper">
+              <div class="video-cell">
+                  <div class="video-content">
+                      <iframe class="video-iframe" src="https://www.youtube.com/embed/hJP5GqnTrNo" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="caption-cell">
+                  <h2>Sal Khan, the founder and CEO of Khan Academy</h2>
+                  <p>He shares the opportunities he sees for students and educators to collaborate with AI tools -- including the potential of a personal AI tutor for every student and an AI teaching assistant for every teacher -- and demos some exciting new features for their educational chatbot, Khanmigo.</p>
+              </div>
+          </div>
+          <div class="video-wrapper">
+              <div class="video-cell">
+                  <div class="video-content">
+                      <iframe class="video-iframe" src="https://www.youtube.com/embed/JMLsHI8aV0g" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="caption-cell"><br><br>
+                  <h2>A growing number of classrooms in China</h2>
+                  <p>While many parents and teachers see them as tools to improve grades, they’ve become some children’s worst nightmare.</p>
+              </div>
+          </div>
+      </div>
+  </main>
+
+</body>
+</html>

@@ -31,12 +31,18 @@ input {
   margin-bottom: .5em;
 }
 
-#submitForm, #reset {
+#submit, #reset {
   width: 7em;
   background-color: silver;
   margin-top: 10px; 
   margin-left: auto;
   text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 #output { 

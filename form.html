@@ -7,6 +7,13 @@
    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
+  <body onload="onPageLoad()">
+  <div class="header"><div class="brand">
+        <h1>EmpowerED</h1>
+    <div class="about-contact">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
   <h1>AI for Educators</h1>
   <h2>Sign-up here!</h2>
   <form>
@@ -32,8 +39,10 @@
          placeholder="999-999-9999" 
          pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
          title="Must be 999-999-999 format"><br><br>
-      <button type="button" id="submit" onclick="submitForm()"> Submit</button><br><br>
-      <input type="reset" name="reset" id="reset">
+      <div class="button-container">
+        <button type="button" id="submit" onclick="submitForm()"> Submit</button>
+        <button type="reset" id="reset" id="reset"> Reset</button>
+      </div>
    </fieldset>
   </form>
   <script src="script.js"></script>

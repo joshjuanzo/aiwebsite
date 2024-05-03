@@ -28,12 +28,12 @@ ul {
   margin-right: 10px;
   margin-left: 20px;
   margin-bottom: 10px;
-  font-size:14;
+  font-size: 14px; 
 }
 
 li {
   margin-bottom: 10px;
-  text-align: left
+  text-align: left;
 }
 
 a {
@@ -43,13 +43,14 @@ a {
 
 a:hover {
     text-decoration: underline;
-
 }
+
 .image-container {
   position: relative;
   display: inline-block;
   margin: 20px;
 }
+
 .image-container img {
   width: 135%; 
   margin-right: 20px;
@@ -58,6 +59,7 @@ a:hover {
   height: auto;
   display: block;
 }
+
 .text-overlay {
   position: absolute;
   background-color: none;
@@ -86,13 +88,14 @@ a:hover {
 .text-overlay.item5 {
   top: 200px;
   left: 250px;
-  font-size:18px;
+  font-size: 18px; 
 }
 
 .header {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
+  
 }
 
 .search-subscribe {
@@ -136,7 +139,7 @@ a:hover {
 }
 
 .signup-button:hover {
-  background-color: #0056b3;
+  background-color: blue;
 }
 
 .separator {
@@ -145,6 +148,7 @@ a:hover {
   background-color: black;
   margin: 0 10px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -169,6 +173,25 @@ a:hover {
 .separator {
     width: 1px;
     height: 20px;
-    background-color: #000;
+    background-color: black;
     margin: 0 10px;
+}
+p {
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em; 
+}
+
+p a {
+    color:blue;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }

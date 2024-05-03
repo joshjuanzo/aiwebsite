@@ -11,6 +11,7 @@ const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 console.log("Firebase setup complete!");
 
+
 function submitForm() {
   const name = document.getElementById('name').value;
   const address = document.getElementById('address').value;
@@ -19,6 +20,7 @@ function submitForm() {
   const zip = document.getElementById('zip').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
+   const password = document.getElementById('password').value;
 
   db.collection("users").add({
     name: name,
@@ -72,4 +74,30 @@ function onImageMouseOut() {
 function onLinkClick(linkName) {
 
   console.log("Link clicked:", linkName);
+}
+function search() {
+
+  var searchTerm = document.getElementById("search-bar").value;
+
+
+  var formattedSearchTerm = searchTerm.replace(/\s+/g, '-').toLowerCase();
+
+ 
+  window.location.href = formattedSearchTerm + ".html"; 
+
+}
+function openAbout() {
+    document.getElementById("aboutModal").style.display = "block";
+}
+
+function closeAbout() {
+    document.getElementById("aboutModal").style.display = "none";
+}
+
+function openContact() {
+    document.getElementById("contactModal").style.display = "block";
+}
+
+function closeContact() {
+    document.getElementById("contactModal").style.display = "none";
 }

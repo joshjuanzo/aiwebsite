@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, serif;
+}
+
+ul {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px; 
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.about-contact a {
+    margin-left: 20px;
+    color: blue; 
+    text-decoration: none;
+}
+
+.about-contact a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.search-subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.search-subscribe form {
+    display: flex;
+}
+
+.search-subscribe input[type="text"] {
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-subscribe button {
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-subscribe button:hover {
+    background-color: blue;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: blue;
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-wrapper {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex; /* Add flexbox to align video and caption vertically */
+    flex-direction: column; /* Arrange video and caption vertically */
+}
+
+.video-cell {
+    flex: 1; /* Make video cell flexible to fill available space */
+}
+
+.video-content {
+    position: relative; /* Make video content position relative for absolute positioning */
+    width: 100%; /* Ensure video content spans entire width */
+    padding-top: 56.25%; /* Set aspect ratio (16:9) */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.video-iframe {
+    position: absolute; /* Position video iframe absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the entire width of the container */
+    height: 100%; /* Fill the entire height of the container */
+}
+
+.caption-cell {
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 14px; /* Set font size for the caption */
+    text-align: justify; /* Justify text alignment */
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 0;
+}

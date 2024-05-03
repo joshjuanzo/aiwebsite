@@ -3,29 +3,43 @@
 <head>
     <title>AI Tools for Educators</title>
     <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
 </head>
-<body onload="onPageLoad()">
+  <body onload="onPageLoad()">
   <div class="header">
-      <h1>EmpowerED</h1>
-      <div>
-        <a href="loginhtml.html" class="signup-link">Log In</a>
-        <span class="separator">|</span>
-        <a href="form.html" class="signup-link">Sign Up</a>
+      <div class="brand">
+          <h1>EmpowerED</h1>
+          <div class="about-contact">
+            <a href="about.html" onclick="openAbout()">About</a>
+              <a href="fc.html" onclick="openFeaturedContent()">Feautured Content</a>
+          </div>
+      </div>
+      <div class="search-subscribe">
+          <form action="https://www.google.com/search" method="GET" target="_blank">
+              <input type="text" name="q" id="google-search-bar" placeholder="Search Google...">
+              <button type="submit">Search</button>
+          </form>
+          <div class="separator"></div>
+          <a href="form.html" class="signup-link">Subscribe</a>
       </div>
   </div>
 
-    <p onmouseover="onParagraphMouseOver()" onmouseout="onParagraphMouseOut()">Welcome to the realm where education meets innovation! In today's educational landscape, the integration of artificial intelligence (AI) tools has become indispensable for educators seeking to enhance teaching and learning experiences. Below, you'll find a selection of AI-powered tools specifically designed for educators.</p>
+    <p onmouseover="onParagraphMouseOver()" onmouseout="onParagraphMouseOut()">
+        Welcome to the realm where education meets innovation! In today's educational landscape, the integration of artificial intelligence (AI) tools has become indispensable for educators seeking to enhance teaching and learning experiences. Below, you'll find a selection of AI-powered tools specifically designed for educators.
+    </p>
+
     <div class="image-container">
-        <img src="Artificial%20intelligence%20to%20Enhance%20Language%20Skills%20Presentation%20in%20Blue%20and%20Purple%203D%20Modern%20Style%20(2).gif" alt="AI Tools for Educators" onmouseover="onImageMouseOver()" onmouseout="onImageMouseOut()">
-      <div class="text-overlay item5">Begin here!</div>
-      <div class="text-overlay item1">1. Sign up to create an account.</div>
-      <div class="text-overlay item2">2. Log in</div>
-      <div class="text-overlay item3">3. Navigate the page using the links</div>
-      <div class="text-overlay item4">4. <a href="subscribe.html">Subscribe</a> to our newsletter.</div>
+        <img src="Artificial intelligence to Enhance Language Skills Presentation in Blue and Purple 3D Modern Style (5).gif" alt="AI Tools for Educators" onmouseover="onImageMouseOver()" onmouseout="onImageMouseOut()">
+        <div class="text-overlay item5">Getting Started!</div>
+        <ol type="1">
+            <li class="text-overlay item1">Visit the AI tools links.</li>
+            <li class="text-overlay item2">Use the search tool</li>
+            <li class="text-overlay item3">Explore our featured content</li>
+            <li class="text-overlay item4">Subscribe to our newsletter.</li>
+        </ol>
     </div>
+
     <ul>
         <li><a href="https://www.gotfeedback.com/" onclick="onLinkClick('gotFeedback')">gotFeedback</a> - Streamlines the feedback process on student essays.</li>
         <li><a href="https://www.canva.com/" onclick="onLinkClick('Canva AI-Powered Tools')">Canva AI-Powered Tools</a> - Transforms outlines into visually appealing slides and designs.</li>
@@ -36,6 +50,7 @@
         <li><a href="https://quizalize.com/" onclick="onLinkClick('Quizalize’s ChatGPT Integration')">Quizalize ChatGPT Integration</a> - Crafts review games from text passages.</li>
         <li><a href="https://conker.ai/" onclick="onLinkClick('Conker.ai’s Question Database')">Conker.ai Question Database</a> - Formulates questions from text passages.</li>
     </ul>
+
     <script src="script.js"></script>
 </body>
 </html>
