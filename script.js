@@ -20,9 +20,8 @@ function submitForm() {
   const zip = document.getElementById('zip').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
-   const password = document.getElementById('password').value;
 
-  db.collection("users").add({
+  db.collection("users").doc(name).set({
     name: name,
     address: address,
     city: city,
@@ -31,8 +30,8 @@ function submitForm() {
     email: email,
     phone: phone
   })
-  .then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
+  .then(function() {
+    console.log("Document successfully written with ID: ", name);
     alert("Form submitted successfully!");
 
     document.getElementById('name').value = '';
@@ -44,10 +43,11 @@ function submitForm() {
     document.getElementById('phone').value = '';
   })
   .catch(function(error) {
-    console.error("Error adding document: ", error);
+    console.error("Error writing document: ", error);
     alert("Error submitting form. Please try again later.");
   });
 }
+
 
 function onPageLoad() {
 }
